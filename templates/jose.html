@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700%7CMerriweather+Sans:300,400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/theme.min.css">
+    
+    <title>Data Analyitics - Final Project</title>
+</head>
+<body>
+    <!--Header Info-->
+
+    <header class="site-header">
+        <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main navigation">
+
+                <a class="navbar-brand text-dark" href="index.html">
+                    <img src="img/passion.svg" alt="Happiness Logo"> Happiness Quest
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center text-uppercase pt-3 pt-lg-0 ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="data_exploration.html">Data Exploration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project_dev.html">Project Developemnt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carolina.html">Carolina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sofia.html">Sofia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jose.html">Jose</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scott.html">Scott</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--Main Content-->
+    <main id="main">
+        <div class="bg-light mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9">
+                        <h1 class="display-4 mb-4">Jose Martinez</h1>
+                        <p>Machine Learning Model Featured: <b>Gradient Boost</b></p>
+                        <p>Project Python Libraries: Pandas | Scikit-learn &amp; XGBoost | Matplotlib &amp; Seaborn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scrolling Feature-->
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 pl-lg-4 order-lg-2">
+                    <nav id="nav-comp" class="navbar navbar-expand-lg navbar-light sticky-top mb-3 pl-0" aria-label="Docs navigation">
+                        <a class="collapsed btn btn-outline-dark btn-block d-lg-none mb-3 p-3" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Toggle navigation">
+                            <span class="text-uppercase">Navigation<i class="fas fa-angle-down ml-4 rotate-icon"></i></span>
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarDocs">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hypothesis">Hypothesis</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#model_details">Model Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_cleaning">Data Cleaning</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_analysis">Data Analysis</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#code">Code</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#">Go top &uarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+               <!-- Page Content -->
+                <!--This is one long column-->
+                <div class="col-lg-9 order-lg-1">
+                    <h2 id="hypothesis" class="py-3">Hypothesis</h2>
+                    <p>Using Decision Trees and Feature Importance, determine which economic variables would be most important.Yet, keeping in mind that social variables would also rank high.</p>
+                    
+                    <h2 id="model_details" class="py-3">Model Details &amp; Objectives </h2>
+                    <p><b>Random Forests (RF) and Gradient Boosting Machine (GBM)</b> both are ensemble learning methods and predict, Regression or Classification, by combining the outputs from individual trees. The purpose of using this model was to classify what features are important for the happiness index we were studying in and to compare these with the results of the random forest.</p>
+                    
+                    <p>Underlying gradient boosting, is the idea of additive modeling. The idea is that we are going to add a bunch of simple terms together to create a more complicated expression. In gradient boosting, that expression (function) represents a model mapping some observation's feature, x, to a target value, y.  However, Instead of creating a single powerful model, boosting combines multiple simple models into a single composite model. The idea is that, as we introduce more and more simple models, or weak learners,  the overall model becomes stronger and stronger.</p>
+                    
+                    
+                    <h2 id="data_cleaning" class="py-3">Data Cleaning</h2>
+                    <p>In addition to dropping null values, and renaming variables for simplify, columns that were related, or inter-associated to one another were dropped to avoid multicollinearity and overfitting our models. When preparing the testing and training data, for gradient boost models we had to use the standard scaler to pass our values in the right format to the model.</p>
+                    
+                    
+                    <h2 id="data_analysis" class="py-3">Data Analysis</h2>
+                        <h2 class="h5 text-center text-dark">Gradient Booster Classifcation</h2>
+                        <img src="img/jose/gb_clf.png" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="GB Classfication">
+
+
+                        <h2 class="h5 text-center text-dark">Random Forest Classifier Features</h2>
+                        <img src="img/jose/rf_classifier_features.png" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="Random Forest Classifier Features">
+
+                    
+                        <h2 class="h5 text-center text-dark">Gradient Booster Classifier Features</h2>                  
+                        <img src="img/jose/xgb_classifier_features.png" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="GB Classifier Features">
+
+                    
+                    
+                    <h2 id="code" class="py-3">GitHub Code</h2>
+                    <p>Happiness Project: Gradient Booster Analysis</p>
+                    <script src="https://gist.github.com/JoseCarvajal-0061/f3dddf67ee0b9afe10b881e0de6c4cc4.js"></script>
+                    
+                    
+                
+                    <h2 id="conclusion" class="py-3">Conclusion</h2>
+                    <p>When creating the gradient boost model, the number of stages and the learning rate, are hyperparameters that affect model accuracy. The more stages we use, the more accurate the model, but the more likely we are to be overfitting. The primary value of the learning, is to reduce overfitting of the overall model</p>
+                    
+                    <p>With the parameters chosen, we got our model to a .90 accuracy score when running our testing data. </p>
+ 
+                    <p>When running this model, economic indicators, like average wages and GDP had a higher weight in predicting happiness.</p>
+ 
+            </div>
+          </div>
+        </div>
+<!--    </section>-->
+    
+    
+<!--    </div>-->
+    </main>
+    
+    
+    
+    
+<!-- Footer-->
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row justify-content-md-between">
+<!--
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h3 class="h5 mb-3">Company</h3>
+                    <p>Boost is a responsive website theme based on Bootstrap 4. We help you to create a site that your users will love.</p>
+                </div>
+-->
+<!--
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">About</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">About</a></li>
+                        <li class="mb-1"><a href="#">Team</a></li>
+                        <li class="mb-1"><a href="#">Careers</a></li>
+                        <li class="mb-1"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">Services</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">Design</a></li>
+                        <li class="mb-1"><a href="#">Themes</a></li>
+                        <li class="mb-1"><a href="#">Branding</a></li>
+                        <li class="mb-1"><a href="#">CMS</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">Help</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">FAQ</a></li>
+                        <li class="mb-1"><a href="#">Contact</a></li>
+                        <li class="mb-1"><a href="#">Phones</a></li>
+                        <li class="mb-1"><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+-->
+            </div>
+
+            <hr class="m-0" role="presentation">
+
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center mt-4">
+                <p class="small text-muted">&copy; Data Project 2019</p>
+<!--
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="icon icon-sm icon-secondary" href="#"><i class="icon-inner fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="icon icon-sm icon-secondary" href="#"><i class="icon-inner fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                    </li>
+                </ul>
+-->
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
