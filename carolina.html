@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700%7CMerriweather+Sans:300,400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/theme.min.css">
+    
+    <title>Data Analyitics - Final Project</title>
+</head>
+<body>
+    <!--Header Info-->
+
+    <header class="site-header">
+        <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main navigation">
+
+                <a class="navbar-brand text-dark" href="index.html">
+                    <img src="img/passion.svg" alt="Happiness Logo"> Happiness Quest
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center text-uppercase pt-3 pt-lg-0 ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="data_exploration.html">Data Exploration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="components.html">Josefina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carolina.html">Carolina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sofia.html">Sofia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jose.html">Jose</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scott.html">Scott</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--Main Content-->
+    <main id="main">
+        <div class="bg-light mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9">
+                        <h1 class="display-4 mb-4">Carolina Carrillo</h1>
+                        <p>Machine Learning Model Featured: <b>Correlation Maps (PCA)</b></p>
+                        <p>Project Python Libraries: Pandas | Scikit-learn, Math &amp; SciPy | Plotly, Matplotlib &amp; Seaborn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!--Scrolling Feature-->
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 pl-lg-4 order-lg-2">
+                    <nav id="nav-comp" class="navbar navbar-expand-lg navbar-light sticky-top mb-3 pl-0" aria-label="Docs navigation">
+                        <a class="collapsed btn btn-outline-dark btn-block d-lg-none mb-3 p-3" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Toggle navigation">
+                            <span class="text-uppercase">Navigation<i class="fas fa-angle-down ml-4 rotate-icon"></i></span>
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarDocs">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hypothesis">Hypothesis</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#model_details">Model Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_cleaning">Data Cleaning</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_analysis">Data Analysis</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#code">Code</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#">Go top &uarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+               <!-- Page Content -->
+                <!--This is one long column-->
+                <div class="col-lg-9 order-lg-1">
+
+                    <h2 id="model_details" class="py-3">Model Details &amp; Objectives </h2>
+                    <p>There are many factors that affect directly or indirectly the general happiness of a country. Being such a subjective matter, knowing exactly what factors are the ones that influence the happiness of a population the most is a challenge. For my analysis I used the World Happiness report from 2019, this report contains information about a Happiness Score of each country which has been computed using the answers from a statistically representative survey.</p>
+                    
+
+                    <h2 id="data_analysis" class="py-3">Data Cleaning &amp; Data Analysis</h2>
+                    
+                    <p>As an outline the following steps were taken for the analysis:</p>
+                    <ul>
+                        <li>Data cleaning and preparation</li>
+                        <li>Union of two datasets</li>
+                        <li>Data analysis plotting information on a world map</li>
+                        <li>Creation of a Regression model to predict the Happiness Score</li>
+                        <li>Evaluation of a Regression model</li>
+                    </ul>
+
+                    <p>The Heatmap below shows the correlation of any variable to another. For instance, we see that the Freedom score and Happiness Score are highly correlated, just like the Life Expectancy and GDP are.</p>
+
+                    <h2 class="h5 text-center text-dark">Correlation Heat Map</h2>
+                    <img src="img/carolina/PCA.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="PCA">
+
+                    
+                    <h2 class="h5 text-center text-dark">Correlation Heat Map Final</h2>
+                    <img src="img/carolina/PCA.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="PCA">
+                    
+                    
+                    <p>This plot is showing some very clear conclusions. The first noticeable fact is that the Happiness Score is highly correlated with positive effect of the country. The positive affect is the average measurement of happiness, laughter and enjoyment from polls given to citizens of each country. The positive affect, in turn, is also highly correlated with Freedom. Knowing these two facts, it's reasonable to confirm that freedom allows people to laugh, and enjoy their everyday lives therefore impacting the Happiness Score of the country.</p>
+                    
+                    <p>In order to have a more consistent analysis with my other teammates a second heatmap was created with the combined dataset which includes data from both OECD and the happiness report. Using this dataset the results obtained are different, the highest correlated variables that impact happiness are Avg. Wages, Delivery Quality, Democratic Quality and Life expectancy at Birth.</p>
+
+                    <p>On the other hand, the indicator Perceptions of corruption is inversely correlated, in general with the majority of the other indicators, including the happiness score. It's logic to confirm, then, that the corrupt countries cause a decrease in the happiness of the population.</p>
+
+                    <p>Since I wanted to predict the happiness score of each country from its indicators,  I decided to do a linear regression and some polynomial regressions of different degrees, this can be seen below.</p>
+
+                     <div class="row">
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20deliver%20quality.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg 1">
+                        </div>
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20democratic%20quality.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg 2">
+                        </div>
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20freedom.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg 3">
+                        </div>
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20Gallup.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg 4">
+                        </div>
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20GINI%20Index%20World%20Bank%20Estimate.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg5">
+                         </div>
+                        <div class="col-sm-6">
+                                <img src="img/carolina/regression%20most%20people%20can%20be%20trusted.svg" class="img-fluid img-thumbnail img-thumbnail-hover mb-4" alt="reg6">
+                         </div>
+                    </div>
+                    
+                    <p>These plots can show us how adjusted the regressions are with the data using only an indicator each time. All the columns were used to predict the happiness score, in order to plot the regression result line I performed PCA to the data. PCA finds the principal components of data, basically it reduces the data down into its basic components, stripping away any unnecessary parts. By applying PCA to the data we obtained a single “feature” that allowed us to represent all the attribute columns in a single axis.</p>
+
+                    <h2 id="conclusion" class="py-3">Conclusion</h2>
+                    <ul>
+                        <li>The regression functions are fitting properly the distribution of the data.</li>
+                        <li>Increasing the degree of the polynomial function can cause better results, but also the appearance of overfitting.</li>
+                        <li>Happiness Ranking basically depends on Economy. Countries having strong GDP rate are happiest countries indeed.</li>
+                        <li>Happiness score depends on family, health, freedom, trust in govt. etc. All of these terms have a great linear relationship with happiness score.</li>
+                        <li>Utilizing the new dataset we can see that the OECD data influences more economic factors, rather than social ones which boost the impact they have on happiness therefore we have variables like Average Wage having a higher correlation than positive affect.</li>
+                    </ul>
+                    
+                    <h2 id="code" class="py-3">GitHub Code</h2>
+                    <p>Happiness Project: Happiness Factors Reviewed (PCA)</p>
+                    <script src="https://gist.github.com/ccarr115/87050abe357fe567c26cb92741fbf2e2.js"></script>
+            </div>
+          </div>
+        </div>
+<!--    </section>-->
+    
+    
+<!--    </div>-->
+    </main>
+    
+    
+    
+    
+<!-- Footer-->
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row justify-content-md-between">
+<!--
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h3 class="h5 mb-3">Company</h3>
+                    <p>Boost is a responsive website theme based on Bootstrap 4. We help you to create a site that your users will love.</p>
+                </div>
+-->
+<!--
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">About</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">About</a></li>
+                        <li class="mb-1"><a href="#">Team</a></li>
+                        <li class="mb-1"><a href="#">Careers</a></li>
+                        <li class="mb-1"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">Services</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">Design</a></li>
+                        <li class="mb-1"><a href="#">Themes</a></li>
+                        <li class="mb-1"><a href="#">Branding</a></li>
+                        <li class="mb-1"><a href="#">CMS</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <h3 class="h5 mb-3">Help</h3>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#">FAQ</a></li>
+                        <li class="mb-1"><a href="#">Contact</a></li>
+                        <li class="mb-1"><a href="#">Phones</a></li>
+                        <li class="mb-1"><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+-->
+            </div>
+
+            <hr class="m-0" role="presentation">
+
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center mt-4">
+                <p class="small text-muted">&copy; Data Project 2019</p>
+<!--
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="icon icon-sm icon-secondary" href="#"><i class="icon-inner fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="icon icon-sm icon-secondary" href="#"><i class="icon-inner fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                    </li>
+                </ul>
+-->
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
