@@ -85,70 +85,24 @@
         <hr class="sep border-primary" role="presentation">
              <!--  Seperator-->
         
-       <p class="my-2 text-center">Click the icon below to explore algorithm further</p> 
-           <div class="d-flex justify-content-center">
-            <div class="row py-4">
-                <div class="col-sm-3">
-                    <div class="pr-lg-3">
-                        <a href="carolina.html">
-                        <img class="avatar avatar-lg" src="img/ml_avatars/correlation.svg" alt="correlation">
-                        </a>
-                        <h3 class="h4">Correlation Map (PCA)</h3>
-                        <p class="mb-md-0"><i>Carolina C.</i></p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="pr-lg-3">
-                        <a href="scott.html">
-                        <img class="avatar avatar-lg" src="img/ml_avatars/decision-tree.svg" alt="Random Forests">
-                        </a>
-                        <h3 class="h4">Random Forests</h3>
-                        <p class="mb-md-0"><i>Scott G.</i></p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="pr-lg-3">
-                        <a href="jose.html">
-                        <img class="avatar avatar-lg" src="img/ml_avatars/gradient_boost.svg" alt="Gradient Boost">
-                        </a>
-                        <h3 class="h4">Gradient Boost</h3>
+             <div class="bg-skew bg-skew-light">
+                <!-- Header -->
+            <section class="container">
+
+            <h2 class="my-5 text-center">Conclusions</h2>
+            <hr class="sep border-primary" role="presentation">
                         
-                        <p class="mb-md-0"><i>Jose C.</i></p>
-                    </div>
-                </div>
-                <!-- <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
-                    <div class="pr-lg-3">
-                        <a href="scott.html"> 
-                        <img class="avatar avatar-lg" src="img/ml_avatars/pair_plot.svg" alt="Pair Plot">
-                        </a>
-                        <h3 class="h4">Pair Plot</h3>
-                        <p class="mb-md-0"><i>Scott G.</i></p>
-                    </div>
-                </div> -->
-                <div class="col-sm-3">
-                    <div class="pr-lg-3">
-                        <a href="sofia.html"> 
-                        <img class="avatar avatar-lg" src="img/ml_avatars/multi_linear_reg.svg" alt="Multiple Linear Reg">
-                        </a>
-                        <h3 class="h4">Multiple Linear Regression</h3>
-                        <p class="mb-md-0"><i>Sofia C.</i></p>
-                    </div>
-                </div>
-                <!-- <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
-                    <div class="pr-lg-3">
-                        <a href="project_dev.html">
-                        <img class="avatar avatar-lg" src="img/ml_avatars/web_development.svg" alt="Gradient Boost">
-                        </a>
-                        <h3 class="h4">Data &amp; Web Developemnt </h3>
-                        
-                        <p class="mb-md-0"><i>Josefina A.</i></p>
-                    </div>
-                </div> -->
+                <p>Though our models did not return the exact same results, there was some notable overlap. Three of the four models identified <b>"Average Wages"</b> as one of the most important features. <b>"GDP","Population Density", "Healthy Life Expectancy", and "Democratic Quality"</b> also surfaced across multiple models. Ultimately, <b>no one feature alone could predict Happiness precisely</b>. It was only when we aggregated three or four top features that we could make predictions with any confidence.</p>
+                            
+            <h2 class="my-5 text-center">Further Thoughts</h2>
+            <hr class="sep border-primary" role="presentation">
+                
+                <p>While our feature analyses indicate the importance of economic factors like Wages in predicting Happiness levels, we also know that some of our variables may have been correlated with one another. Wages and GDP, for example, are highly correlated. This may have biased the findings. If we were to continue this analysis, we would do another round of feature selection, mitigating potential bias by limiting inter-variable correlation. </p>
+                
+                <p>We would also like to increase the size of our dataset. After cleaning the data to remove any missing values, we were effectively left with only a couple hundred rows of data. This may not have been large enough to effectively train our models. To increase data size, we should search for more comprehensive economic data sets or agree on a statistically sound method to replace null values. </p>
+      
+            </section>
             </div>
-          </div>
-     
-        </section>
-    </div>
 
     </main>
     <footer class="site-footer mt-5">
